@@ -37,3 +37,7 @@ token_uri = @@@@@@@@@@@@
 auth_provider_x509_cert_url = @@@@@@@@@@@@
 client_x509_cert_url = @@@@@@@@@@@@
 
+NEXTJS CONFIG FOR BERGLAS
+private_key: `-----BEGIN PRIVATE KEY-----${process.env.private_key} PRIVATE KEY-----`.replace(/\\n/g, '\n'),
+***remove all the /n then add it to berglas as private_key. it gets init as literal string into PEM formate. kinda ghetto...***
+
